@@ -15,4 +15,11 @@ into "Number" - Number(variable)
 "33" -> 33
 "true" -> 1, "false"->0
 
+#memory
+primitive(int,string,float etc) data types used stack memory(it sends copy of value )
+Non-primitive(object,array,funtion) datatypes used heap memory(it send refrence of original value)
+
+#String
+In modern:use `` for string interpolation and ${} for variable to inject into string
+
 
