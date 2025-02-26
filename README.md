@@ -3,7 +3,7 @@
 # constants
 "const" - definig constant
 #Datatype
-1. "Number" - 2 raise 53
+1. "Number" - range 2 raise 53
 2. "bigint - 
 3. String :"",''
 4. boolean : true/false
