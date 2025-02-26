@@ -1,4 +1,4 @@
-//basic syntax of iife
+//basic syntax of iife(used to imieditatly execute)
 (function user() {//Named IIFE
 
     console.log(`DB Connected`);
