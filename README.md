@@ -9,7 +9,11 @@
 4. boolean : true/false
 5. null : standalone value/it's representation of empty value
 6. undefined : non assigned variable/when you have not defined value of declared variable
-7. symbol- uniqueness &immutable,used oftenly as a key of abject
+7. symbol- uniqueness & immutable,used oftenly as a key of abject.It is created by caling symbol() function.Once it is created,it's value cannot be changed. for example
+const s1 = symbol("123");
+const s2 = symbol("123");
+console.log(s1 === s2) //false
+
 #conversion
 into "Number" - Number(variable)
 "33" -> 33

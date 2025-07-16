@@ -16,16 +16,16 @@ console.log(str.charAt(5));
 console.log(str.indexOf('n'));
 
 const str1 = new String('Aliya Tabassum')
-console.log(str1.substring(0,5));
+console.log(str1.substring(0, 5));
 
-console.log(str1.slice(1,-10));
+console.log(str1.slice(1, -10));
 
-console.log(str1.trim());//removes starting and ending space
+console.log(str1.trim());//trim removes starting and ending whitespace space
 
 const str2 = new String(" aliya ")
 console.log(str2.trim());
 const url = "http//qwerty@.comqwert%20qwerty"
-console.log(url.replace("%20" , "-"));
+console.log(url.replace("%20", "-"));
 console.log(url.includes('qwert'));
 console.log(url.includes('nhfdh'));
 const str3 = "hii this is venom"
