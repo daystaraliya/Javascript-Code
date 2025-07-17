@@ -1,13 +1,11 @@
-let myDate = new Date();
-console.log(myDate);
+function loggedUser(username = "sam") {
+  if (!username) {
+    console.log("please enter a  username");
 
-console.log(myDate.toISOString());
-console.log(myDate.toDateString());
-console.log(myDate.toLocaleString());
-console.log(myDate.toLocaleDateString());
-console.log(myDate.toTimeString());
-console.log(myDate.toJSON());
-console.log(myDate.toISOString());
+  }
+  else {
+    return `${username} is logged in`
+  }
+}
 
-
-
+console.log(loggedUser());
