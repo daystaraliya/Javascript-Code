@@ -1,3 +1,6 @@
+
+
+
 function loginUser(userName) {
     if (!userName) {
         return `please enter usename`
@@ -7,7 +10,19 @@ function loginUser(userName) {
 //console.log(loginUser());//itll give undefind
 //console.log(loginUser("Aliya"));
 
-function calCartPrice(...num) {
+function loggedUser(username = "sam") {
+    if (!username) {//it ill never be true bcoz username have initialised value sam
+        console.log("please enter a  username");
+
+    }
+    else {
+        return `${username} is logged in`
+    }
+}
+
+console.log(loggedUser());
+
+function calCartPrice(...num) { //use rest operator to take mulltiple values and it will return array of all numbers
     return num
 }
 //console.log(calCartPrice(5));
@@ -27,7 +42,7 @@ function handleObjectUser(anyObject) {
 
 }
 //handleObjectUser(user)//function call
-handleObjectUser({//passing direct object
+handleObjectUser({      //passing direct object
     username: "joe",
     price: 899
 })
