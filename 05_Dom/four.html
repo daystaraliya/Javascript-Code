@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: antiquewhite;">
+  <ul class="language">
+    <li>javascript</li>
+  </ul>
+</body>
+<script>
+  //Basic way to add  more language
+  function addLanguage (langName) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li);
+
+  }
+
+  addLanguage("python")
+  addLanguage("Typescript")
+  //optimized way to add elements
+  function addOptimizedLanguage (langName) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li);
+  }
+  addOptimizedLanguage("Golang");
+  addOptimizedLanguage("Ruby");
+  addOptimizedLanguage("React");
+  addOptimizedLanguage("CSS")
+
+  //edits -  replace any item of list by new item
+  const secondLang=document.querySelector("li:nth-child(2)");
+
+  console.log(secondLang);
+  
+  secondLang.innerHTML = "Mojo";//not optimized
+
+  // optimized way to replace language
+  // const newli =  document.createElement('li');
+  // newli.textContent = "Mojo";
+  // secondLang.replaceWith(newli)
+
+  //another way to edit
+  const firstLang = document.querySelector("li:nth-child(1)");
+  firstLang.outerHTML = '<li>.net</li>'
+
+  //remove
+  const lastLang = document.querySelector('li:last-child');
+  lastLang.remove();
+
+</script>
+</html>

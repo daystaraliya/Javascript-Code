@@ -27,3 +27,15 @@ Non-primitive(object,array,funtion) datatypes used heap memory(it send refrence 
 In modern:use `` for string interpolation and ${} for variable to inject into string
 
 
+#javascript Execution Context
+javascript is single threaded
+browser and node envireonment me execution is different
+
+javascript run files in two phase
+1. Global Execution Context : (koi v javascript ko code diya jata h, toh firstly global  execution context bnta h. And Global execution context located to the variable "this" and browser me this ki value "windows" aati h)
+2. functional execution phase
+3. eval execution context
+
+js code run in two phase 
+1. memory creation phase(sare variable se name store krke unme value "undefined" store kiya jata and function ke ander "definition" store kiya jata h ,then jo v variable ka value hota ho usko assign kiya jata h)
+2. execution phase
